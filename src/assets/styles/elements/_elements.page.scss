@@ -13,9 +13,11 @@
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
  */
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
 
 html {
   font-size: ($inuit-global-font-size / 16px) * 1em; /* [1] */
+  font-family: 'Space Mono', monospace;
   line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */

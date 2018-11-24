@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <div>
-      Content
+      Home
     </div>
   </v-layout>
 </template>
@@ -13,13 +13,7 @@
  *
  */
 
-import VLayout from '@/layouts/Hero.vue';
-
 export default {
   name: 'HomeIndex',
-
-  components: {
-    VLayout,
-  },
 };
 </script>
