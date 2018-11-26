@@ -1,0 +1,66 @@
+.c-hero {
+  position: relative;
+  min-height: 100vh;
+
+  &__header { }
+
+  &__content {
+    padding-bottom: 150px;
+
+    // Remove and don't use this "media-queries".
+    @media screen and (max-width: 992px) {
+      .u-h1 {
+        font-size: $inuit-font-size-h2 !important;
+      }
+      .u-h2 {
+        font-size: $inuit-font-size-h3 !important;
+      }
+      .u-h4 {
+        font-size: $inuit-font-size-h5 !important;
+      }
+    }
+
+    // Remove and don't use this "media-queries".
+    @media screen and (max-width: 600px) {
+      .u-h1 {
+        font-size: $inuit-font-size-h3 !important;
+      }
+      .u-h2 {
+        font-size: $inuit-font-size-h4 !important;
+      }
+      .u-h4 {
+        font-size: $inuit-font-size-h6 !important;
+      }
+    }
+  }
+
+  &__footer {
+    @extend .o-pack;
+
+    position: absolute;
+    bottom: 0;
+
+    &__info {
+      @extend .o-pack__item;
+
+      padding-left: $inuit-global-spacing-unit;
+      padding-right: $inuit-global-spacing-unit;
+      margin-left: auto;
+      margin-right: auto;
+
+      vertical-align: middle;
+      background-color: $color-gray-nurse;
+      color: $color-gray-oslo;
+    }
+
+    &__image {
+      @extend .o-pack__item;
+
+      background-image: url('~@/assets/img/banner1.jpg');
+      background-repeat: no-repeat; 
+      background-size: 200%;
+      width: 60%;
+      height: 150px;
+    }
+  }
+}

@@ -4,8 +4,8 @@
  *
  */
 
-import general from './general.json';
+import hero from './hero.json';
 
 export default {
-  general,
+  hero,
 };
