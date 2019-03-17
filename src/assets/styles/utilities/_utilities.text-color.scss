@@ -1,0 +1,18 @@
+///* ========================================================================
+//   #COLORS
+//   ======================================================================== */
+
+.u-color {
+  &-black {
+    color: $color-black;
+  } 
+  &-gray-nurse {
+    color: $color-gray-nurse;
+  }
+  &-gray-oslo {
+    color: $color-gray-oslo;
+  }
+  &-silver {
+    color: $color-silver;
+  }
+}
