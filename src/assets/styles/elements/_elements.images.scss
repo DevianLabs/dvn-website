@@ -22,7 +22,7 @@ img {
 // on `<img>` elements in your markup, but still want the images to be fluid,
 // set this to `false`.
 
-$inuit-static-images: true !default;
+$inuit-static-images: false !default;
 
   @if ($inuit-static-images == true) {
 

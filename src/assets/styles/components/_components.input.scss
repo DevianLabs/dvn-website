@@ -1,0 +1,22 @@
+.c-input {
+  font-family: inherit;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+
+  padding: 0 30px;
+  margin: $inuit-global-spacing-unit-small;
+  outline: none;
+  background-color: $color-gray-nurse;
+  color: $color-brand-darkgray;
+  border: 0;
+  transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  width: 100%;
+
+  
+
+  -webkit-transition: background-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}

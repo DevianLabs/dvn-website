@@ -11,26 +11,42 @@
  *
  */
 
+.u-hhuge {
+  @include inuit-font-size($inuit-font-size-huge, $important: true);
+  font-weight: 700;
+}
+
+.u-hbig {
+  @include inuit-font-size($inuit-font-size-big, $important: true);
+  font-weight: 400;
+}
+
 .u-h1 {
   @include inuit-font-size($inuit-font-size-h1, $important: true);
+  font-weight: 700;
 }
 
 .u-h2 {
   @include inuit-font-size($inuit-font-size-h2, $important: true);
+  font-weight: 700;
 }
 
 .u-h3 {
   @include inuit-font-size($inuit-font-size-h3, $important: true);
+  font-weight: 700;
 }
 
 .u-h4 {
   @include inuit-font-size($inuit-font-size-h4, $important: true);
+  font-weight: 400;
 }
 
 .u-h5 {
   @include inuit-font-size($inuit-font-size-h5, $important: true);
+  font-weight: 400;
 }
 
 .u-h6 {
   @include inuit-font-size($inuit-font-size-h6, $important: true);
+  font-weight: 400;
 }

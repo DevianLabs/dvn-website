@@ -1,19 +1,11 @@
 import Vue from 'vue';
-import './plugins/vuex';
-import { i18n } from './plugins/vue-i18n';
-import { router } from './plugins/vue-router';
-import './plugins/vuex-router-sync';
-import './assets/styles/main.scss';
 import App from './App.vue';
-import store from './store';
+import router from './routes';
+import './assets/styles/main.scss';
 
 Vue.config.productionTip = false;
 
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  i18n,
   router,
-  store,
-  render: h => h(App),
-});
+  render: h => h(App)
+}).$mount('#app');

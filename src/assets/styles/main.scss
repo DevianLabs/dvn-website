@@ -75,10 +75,10 @@
  */
 
 // SETTINGS
+@import "settings/settings.colors";
 @import "settings/settings.config";
 @import "settings/settings.core";
 @import "settings/settings.global";
-@import "settings/settings.colors";
 
 
 
@@ -109,6 +109,7 @@
 @import "elements/elements.headings";
 @import "elements/elements.images";
 @import "elements/elements.tables";
+@import "elements/elements.anchors";
 
 
 
@@ -137,6 +138,14 @@
 // COMPONENTS
 //
 // Build and include your project’s UI components here.
+// @import "components/example.components.buttons";
+@import "components/components.site";
+@import "components/components.site-header";
+@import "components/components.bg-img";
+@import "components/components.box";
+@import "components/components.input";
+@import "components/components.button";
+
 
 
 
@@ -154,5 +163,5 @@ $inuit-offsets: true;
 @import "utilities/utilities.responsive-spacings";
 @import "utilities/utilities.print";
 @import "utilities/utilities.hide";
-@import "utilities/utilities.hide";
-@import "utilities/utilities.text-color";
+@import "utilities/utilities.text";
+@import "utilities/utilities.align";

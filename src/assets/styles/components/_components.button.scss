@@ -1,0 +1,22 @@
+.c-btn {
+  position: relative;
+  border: 1px solid;
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
+  min-height: 50px;
+  // font-weight: 700;
+  font-family: inherit;
+  border-radius: 2px;
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  color: rgb(255,255,255);
+  background-color: $color-light-blue;
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,0.1);
+  -webkit-transition: 0.2s background-color,0.2s color,0.2s border-color,0.2s opacity;
+  transition: 0.2s background-color,0.2s color,0.2s border-color,0.2s opacity;
+
+  &:hover {
+    background-color: rgb(52, 68, 251);
+  }
+}

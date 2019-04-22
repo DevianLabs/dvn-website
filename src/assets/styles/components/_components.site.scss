@@ -1,0 +1,33 @@
+.c-site-section {
+  & .o-layout__item {
+    @include inuit-font-size(20px, $important: true);
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+
+  &--gray1 {
+    background-color: $color-gray-bg1;
+  }
+
+  &--gray2 {
+    background-color: $color-gray-bg2;
+  }
+
+  &--blue {
+    background-color: $color-light-blue;
+    color: $color-white;
+  }
+
+  &--darkgray {
+    background-color: $color-brand-darkgray;
+    color: $color-white;
+  }
+}
+
+.c-site-footer {
+  & .o-layout__item {
+    @include inuit-font-size(16px, $important: true);
+  }
+}

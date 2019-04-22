@@ -1,0 +1,52 @@
+.c-site-header {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1020;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+
+  &--bg {
+    background-color: rgba($color-white, 1) !important;
+    & .c-site-header__menu {
+      color: $color-brand-darkgray !important;
+    }
+  }
+
+  &__brand {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  &__menu {
+    display: inline-block;
+    color: $color-white;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+    text-align: right;
+
+    &--light {
+      color: $color-brand-darkgray !important;
+    }
+
+    ul {
+      @extend .o-list-inline;
+      margin: 0;
+
+      & li {
+        @extend .o-list-inline__item;
+        margin-left: $inuit-global-spacing-unit;
+      }
+    }
+  }
+}
