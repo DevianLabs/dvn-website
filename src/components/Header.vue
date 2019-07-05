@@ -2,20 +2,25 @@
   <header
     id="c-site-header"
     :class="{ 'c-site-header--bg' : showBackground }"
-    class="c-site-header u-padding-horizontal u-padding-vertical-small">
-    <div class="c-site-header__brand u-1/5">
-      <a href="/">
-        <img src="../assets/images/logoemblema.svg" alt="">
-      </a>
-    </div>
-    <div class="c-site-header__menu u-4/5" :class="{ 'c-site-header__menu--light' : darkText }">
-      <ul>
-        <li><router-link :to="{ name: 'services' }">Servicios</router-link>
-        <li><router-link :to="{ name: 'work' }">Trabajo</router-link>
-        <li><router-link :to="{ name: 'process' }">Proceso</router-link>
-        <li><router-link :to="{ name: 'culture' }">Cultura</router-link>
-        <li><a href="">ES</a> / <a href="">EN</a></li>
-      </ul>
+    class="c-site-header u-padding-vertical">
+    <div class="o-wrapper">
+      <div class="c-site-header__brand u-2/5">
+        <router-link :to="{ path: '/' }">
+          <img class="c-site-header__brand__img" src="../assets/images/logoemblema.svg" />
+        </router-link>
+      </div>
+      <div class="c-site-header__menu u-3/5" :class="{ 'c-site-header__menu--light' : darkText }">
+        <div class="c-site-header__menu__fold">
+          <span>Menu</span>
+        </div>
+        <ul class="c-site-header__menu__list">
+          <li><router-link :to="{ name: 'services' }">Servicios</router-link>
+          <li><router-link :to="{ name: 'work' }">Trabajo</router-link>
+          <li><router-link :to="{ name: '' }">Proceso</router-link>
+          <li><router-link :to="{ name: '' }">Cultura</router-link>
+          <li><a href="">ES</a> / <a href="">EN</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 </template>
@@ -36,7 +41,9 @@ export default {
     };
   },
 
-  created () {
+  mounted () {
+    this.handleScroll();
+
     window.addEventListener('scroll', this.handleScroll);
   },
 

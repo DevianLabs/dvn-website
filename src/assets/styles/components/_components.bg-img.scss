@@ -2,4 +2,9 @@
   background-repeat: no-repeat;
   background-position: right top, right top;
   background-size: 70% 100%;
+
+  @include mq($from: mobile, $until: tablet) {
+    background-size: 100% 100%;
+    margin-top: 50px;
+  }
 }

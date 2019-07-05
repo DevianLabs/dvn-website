@@ -1,64 +1,50 @@
 .c-box {
   @extend .o-box;
-  border-radius: 2px;
-  min-height: 270px;
-  position: relative;
-  transition: background-color 0.5s ease-in-out;
-  color: $color-white;
+  min-height: 700px;
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    color: $color-light-blue;
-    background-color: $color-white !important;
-
-    .c-box__plain-overlay {
-      opacity: 1;
-      transform: translateX(75%);
-    }
-
-    .c-box__rich-overlay {
-      opacity: 1;
-      background-color: $color-white;
-    }
-
-    .c-box__subtitle {
-      bottom: $inuit-global-spacing-unit-huge;
-    }
+  &__content {
+    padding: $inuit-global-spacing-unit;
   }
 
-  &__plain-overlay,
-  &__rich-overlay {
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transition: all 0.5s ease-in-out;
-  }
-
-  &__rich-overlay {
-    min-height: 100%;
-  }
-
-  &__title {
-    position: absolute;
-    top: $inuit-global-spacing-unit;
-    left: $inuit-global-spacing-unit;
-    right: $inuit-global-spacing-unit;
-    transition: all 0.5s ease-in-out;
-  }
-
-  &__subtitle {
-    position: absolute;
-    right: $inuit-global-spacing-unit-large;
-    left: $inuit-global-spacing-unit;
-    bottom: $inuit-global-spacing-unit;
-    transition: all 0.5s ease-in-out;
-  }
-
-  img {
-    vertical-align: middle;
+  &__img {
+    display: inline-block;
+    position: relative;
     width: 100%;
+    min-height: 692px;
+    overflow: hidden;
+    
+
+    &--full {
+      min-height: 700px;
+
+      img {
+        min-height: inherit;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &--gray {
+    background-color: $color-gray-nurse;
+  }
+
+  &--blue {
+    background-color: $color-brand-blue;
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+
+  &--trans {
+    background-color: transparent;
   }
 }

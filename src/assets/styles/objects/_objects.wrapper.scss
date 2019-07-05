@@ -6,7 +6,18 @@
  * Page-level constraining and wrapping elements.
  */
 
-$inuit-wrapper-width: 1200px !default;
+$inuit-wrapper-width: 1400px !default;
+
+@media screen and (min-width: 1600px) {
+  .o-wrapper {
+    max-width: 1600px !important;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .o-wrapper {
+    max-width: 1900px !important;
+  }
+}
 
 @if (type-of($inuit-wrapper-width) != number) {
   @error "`#{$inuit-wrapper-width}` needs to be a number.";

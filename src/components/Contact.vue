@@ -1,17 +1,17 @@
 <template>
   <div class="c-site-section c-site-section--white light">
     <div class="o-wrapper u-padding-vertical-huge">
-      <p class="u-h1">¡Queremos escucharte!</p>
+      <p class="u-h1">¡Cuéntanos sobre tu proyecto!</p>
       <div class="o-layout">
-        <div class="o-layout__item u-1/2">
+        <div class="o-layout__item u-1/2@desktop">
           <p class="u-text-darkgray">
-            Cuéntanos sobre tu proyecto o idea.
-            <br>
             Ponte en contacto con nosotros y conoce todas las formas en las que podemos colaborar.
           </p>
         </div>
         <div class="o-layout__item">
-          <button class="c-btn u-margin-vertical">
+          <button
+            @click="goForm()"
+            class="c-btn u-margin-vertical">
             <span>COMENZAR</span>
           </button>
         </div>
@@ -22,5 +22,11 @@
 <script>
 export default {
   name: 'Contact',
+
+  methods: {
+    goForm() {
+      window.open('https://devianlabs.typeform.com/to/Api4jA', '_blank');
+    },
+  },
 };
 </script>

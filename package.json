@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "inuitcss": "^6.0.0",
+    "paper": "^0.12.3",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1"
   },

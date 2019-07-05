@@ -21,6 +21,11 @@
   font-weight: 400;
 }
 
+.u-hlarge {
+  @include inuit-font-size($inuit-font-size-large, $important: true);
+  font-weight: 400;
+}
+
 .u-h1 {
   @include inuit-font-size($inuit-font-size-h1, $important: true);
   font-weight: 700;

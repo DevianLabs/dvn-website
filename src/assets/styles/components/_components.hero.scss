@@ -1,0 +1,10 @@
+.c-hero {
+  height: 100vh;
+  text-align: left;
+  display: flex;
+  align-items: center;
+
+  @include mq($from: mobile, $until: tablet) {
+    margin-top: 50px;
+  }
+}

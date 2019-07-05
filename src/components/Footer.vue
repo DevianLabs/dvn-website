@@ -4,17 +4,17 @@
       <div class="o-layout">
         <div class="o-layout__item u-1/4">
           <img src="../assets/images/logoemblema-w.svg" width="200" alt="">
-          <p class="u-padding-vertical">
-            Software Development <br> & Digital Design
-          </p>
-          <span>////</span>
-          <br>
-          <small> <b>HECHO EN MONTERREY, MÉXICO &lt;3</b></small>
+          <div class="u-padding-vertical">
+            <span>Software Development <br> & Digital Design</span>
+          </div>
+          <div class="u-padding-vertical">
+            <span>////</span>
+            <br>
+            <small> <b>HECHO EN MONTERREY, MÉXICO &lt;3</b></small>
+          </div>
         </div>
         <div class="o-layout__item u-1/4 u-push-1/4">
-          <span>
-            <b>SOCIAL</b>
-          </span>
+          <small> SOCIAL </small>
           <ul class="o-list-bare u-margin-vertical-small">
             <li class="o-list-bare__item">
               <a href="https://www.linkedin.com/company/devian-labs/">LinkedIn</a>
@@ -32,15 +32,12 @@
               <a href="https://www.instagram.com/devianlabs/">Instagram</a>
             </li>
             <li class="o-list-bare__item">
-              <a href="https://www.facebook.com/devianlabs"></a>
-              Facebook
+              <a href="https://www.facebook.com/devianlabs">Facebook</a>
             </li>
           </ul>
         </div>
         <div class="o-layout__item u-1/4 u-push-1/4">
-          <span>
-            <b>CONTACTO</b>
-          </span>
+          <small> CONTACTO</small>
           <ul class="o-list-bare u-margin-vertical-small">
             <li class="o-list-bare__item u-margin-vertical-small">
               <p>

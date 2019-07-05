@@ -1,17 +1,18 @@
 .c-site-section {
-  & .o-layout__item {
-    @include inuit-font-size(20px, $important: true);
-  }
+
+  //enabled $inuit-use-markup-fix: true in o-layout
+  // Required in order to set inuit-font-size()
+  @include inuit-font-size(20px, $important: true);
 
   &--white {
     background-color: $color-white;
   }
 
-  &--gray1 {
+  &--gray-bg1 {
     background-color: $color-gray-bg1;
   }
 
-  &--gray2 {
+  &--gray-bg2 {
     background-color: $color-gray-bg2;
   }
 
@@ -23,11 +24,5 @@
   &--darkgray {
     background-color: $color-brand-darkgray;
     color: $color-white;
-  }
-}
-
-.c-site-footer {
-  & .o-layout__item {
-    @include inuit-font-size(16px, $important: true);
   }
 }
