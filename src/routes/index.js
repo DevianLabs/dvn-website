@@ -43,10 +43,15 @@ export default new Router({
       name: 'process',
       component: () => import('@/views/Process.vue'),
     },
+    // {
+    //   path: '/culture',
+    //   name: 'culture',
+    //   component: () => import('@/views/Culture.vue'),
+    // },
     {
-      path: '/culture',
-      name: 'culture',
-      component: () => import('@/views/Culture.vue'),
+      path: '/contact',
+      name: 'contact',
+      component: () => import('@/views/Contact.vue'),
     },
   ],
 });

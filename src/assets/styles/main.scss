@@ -79,6 +79,7 @@
 @import "settings/settings.config";
 @import "settings/settings.core";
 @import "settings/settings.global";
+@import "settings/settings.headings-size";
 
 
 
@@ -106,7 +107,6 @@
 
 // ELEMENTS
 @import "elements/elements.page";
-@import "elements/elements.headings";
 @import "elements/elements.images";
 @import "elements/elements.tables";
 @import "elements/elements.anchors";

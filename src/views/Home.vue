@@ -3,7 +3,7 @@
 
     <!-- intro -->
     <div class="c-bg-img" :style="`background-image: url(${banner});`">
-      <div class="c-site-section o-wrapper u-padding-vertical-huge u-text-white">
+      <div class="o-wrapper c-site-section u-padding-vertical-huge u-text-white">
         <div class="o-layout">
           <div
             class="o-layout__item u-push-1/3@desktop u-1/3@desktop u-push-1/3@tablet u-1/3@tablet">

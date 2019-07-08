@@ -1,8 +1,20 @@
 <template>
   <v-site-layout>
+    <div class="c-site-section c-site-section--gray-white light">
+      <div class="o-wrapper c-site-section u-padding-top-huge">
+        <div class="o-layout u-margin-vertical-huge">
+          <div class="o-layout__item u-3/4@desktop">
+            <h1 class="u-h6">TRABAJO</h1>
+            <p class="u-h1">
+              Conoce nuestro trabajo hecho para empresas que admiramos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- brief -->
-    <div class="c-hero c-site-section c-site-section--white light">
+    <!-- <div class="c-hero c-site-section c-site-section--white light">
       <div class="o-wrapper u-padding-vertical-huge">
         <div class="o-layout">
           <div class="o-layout__item u-3/4@desktop">
@@ -13,7 +25,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- work 01 -->
     <div class="c-site-section c-site-section--gray-bg1 light">

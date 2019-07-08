@@ -21,6 +21,33 @@
     }
   }
 
+  &__overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $color-white;
+    overflow: auto;
+    z-index: 99;
+
+    @include mq($from: tablet) {
+      display: none !important;
+    }
+
+    &__list {
+      @extend .o-list-bare;
+
+      & li {
+        @extend .o-list-bare__item;
+
+        background-color: $color-gray-nurse;
+        padding: $inuit-global-spacing-unit;
+        margin-top: $inuit-global-spacing-unit-small;
+        margin-bottom: $inuit-global-spacing-unit-small;
+      }
+    }
+  }
+
   &__brand {
     display: inline-block;
     box-sizing: border-box;
